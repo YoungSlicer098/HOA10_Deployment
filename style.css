@@ -1,0 +1,143 @@
+.onepiece {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Pics/OnePieceBG.png) !important;
+    background-position: cover !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+.header{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height:  50px;
+    padding: 0px;
+    margin: 0px;
+    top: 0px;
+    background-image: url(Pics/bg_header2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+}
+.homepage{
+    position: relative;
+    background-image: url(Pics/CenterRed.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    object-fit: cover;
+    top: 10;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.homepage h2, .homepage h3, .homepage h5{
+    transform: translateY(25px);
+}
+.c-desc{
+    position: relative;
+    background-image: url(Pics/CenterRed.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    height: 150px;
+    object-fit: cover;
+    top: 10;
+    text-justify: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px;
+    font-family:'Times New Roman', Times, serif;
+}
+.splatterleft{
+    background-image: url(Pics/LeftSplatter.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 80%;
+    padding: 0px,0px,0px,5px;
+}
+.logo{
+    padding: 0px !important;
+    margin: 0px !important;
+    width: 120px;
+    height: auto;
+    transform: translateY(-10px);
+}
+.c-item {
+    height: 425px;
+}
+
+.c-img:hover {
+    animation-name: gallery;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-play-state: running;
+    scale: 102%;
+}
+
+@keyframes gallery {
+    0% {
+        scale: 100%;
+    }
+
+    100% {
+        scale: 102%;
+    }
+}
+
+.c-img {
+    height: 250px;
+    padding-top: 5px;
+    object-fit: cover;
+}
+
+.circle {
+    border-radius: 100%;
+    padding: 10px;
+}
+.m-item{
+    transform: translateX(0);
+    height: 530px;
+    object-fit: cover;
+}
+.m-img{
+    transform: translateX(0);
+    height: 500px;
+    object-fit: cover;
+}
+.pdfviewer {
+    height: 530px;
+    object-fit: cover;
+    width: 100%;
+}
+.gifwalk {
+    position: fixed;
+    height: 60px;
+    object-fit: cover;
+    left: -3%;
+    animation-name: gifwalk;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    bottom: 17px;
+}
+@keyframes gifwalk{
+    0%{left: -3%; transform: scaleX(1);}
+    50%{left: 100%; transform: scaleX(1);}
+    51%{left: 101%; transform: scaleX(-1);}
+    100%{left: -3%; transform: scaleX(-1);}
+}
+.grassland{
+    position: fixed;
+    height: 30px;
+    width: 100%;
+    background-repeat: repeat-x;
+    bottom: 0;
+    border: none;
+    background-image: url(Pics/grass.png);
+}
